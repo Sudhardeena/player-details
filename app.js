@@ -38,7 +38,7 @@ app.get('/players/', async (request, response) => {
   player_id;`
   const listOfPlayers = await db.all(getBooksQuery)
   console.log(listOfPlayers)
-  response.send('Hai')
+  response.send(listOfPlayers)
 })
 
 module.exports = app
